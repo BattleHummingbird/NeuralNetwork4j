@@ -1,11 +1,11 @@
-package Chapter1;
+package Chapter2;
 
 import java.util.ArrayList;
 
 public abstract class Layer {
 
 	private ArrayList<Neuron> listOfNeurons;  // 每层所含神经元集合
-	private int numberOfNeuronsInLayer;		  // 神经元数量
+	protected int numberOfNeuronsInLayer;		  // 神经元数量
 	
 	public void printLayer(){
 	}

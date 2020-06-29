@@ -1,4 +1,4 @@
-package Chapter1;
+package Chapter2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -45,5 +45,10 @@ public class InputLayer extends Layer {
 			System.out.println(Arrays.deepToString( neuron.getListOfWeightIn().toArray() ));
 			n++;
 		}
+	}
+	
+	// 设置输入层的神经元数量，由于偏置的存在，它是一个一个增加的
+	public void setNumberOfNeuronsInLayer(int numberOfNeuronsInLayer) {
+		this.numberOfNeuronsInLayer = numberOfNeuronsInLayer + 1; //BIAS
 	}
 }
